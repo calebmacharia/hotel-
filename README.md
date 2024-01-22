@@ -1,1 +1,1 @@
-a hotel booking site with sign in changes
+a hotel booking site with sign in pages
