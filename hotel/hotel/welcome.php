@@ -1,0 +1,201 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: index.php");
+    exit;
+}
+?>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{ font: 14px sans-serif; text-align: center; }
+    </style>
+</head>
+<body>
+    
+    <p>
+    <!doctype html>
+<html>
+    <head>
+   <title>
+       hotel booking site
+   </title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,intial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rubik&display=swap" rel="stylesheet">
+
+    </head>
+    <body> 
+<section id="banner">
+    <img src="images/thy.jpg"class="logo">
+<div class="banner-text">
+
+    <h1>luxury hotels</h1>
+    <p>Book Now,Pay When you stay</p>
+    <div class="banner-btn">
+        <a href="#"><span></span>Find out</a>
+        <a href="#"><span></span>Read more</a>
+    </div>
+
+
+</div>
+    
+</section>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menubtn">
+    <img scr="images/menu.png" id="menu">
+</div>
+<!--features-->
+<section id="features">
+    <div class="title-text">
+        <p>features</p>
+        <h1>why choose us</h1>
+    </div>
+<div class="features-box">
+<div class="features">
+    <h1>Experienced staff</h1>
+    <div class="features-desc"></div>
+<div class="feature-text"></div>
+<p>First impressions are everything. Make sure yours communicates your commitment to cleanliness and comfort. Great hotels understand what works, and have perfected the aesthetics of their establishment in every way.</p>
+</div>
+<div class="features-img">
+  <img src="images/recp.jpg ">
+</div>
+</section>
+
+<!--service-->
+<section id="service">
+    <div class="title-text">
+        <p>services</p>
+        <h1>we provide better</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="images/pple.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc"></div>
+                <h3>our people</h3>
+                <hr>
+                <p>Hotel customer service is the dedication and attention paid to the experience that customers have during their stay. Everything from room cleaning, to turndown ...
+                </p>
+            </div>
+            <div class="single-service">
+                <img src="images/lobby.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc"></div>
+                <h3>our people</h3>
+                <hr>
+                <p>Hotel customer service is the dedication and attention paid to the experience that customers have during their stay. Everything from room cleaning, to turndown ...
+                </p>
+                </div>
+            </div>
+            </section>
+            <!--Testimonial-->
+            <section id="testimonial">
+                <div class="title-text">
+                 <P>TESTIMONIAL</P> 
+                 <h1>what client says</h1> 
+                </div>
+                <div class="testimonial-row">
+                <div class="testimonial-col">
+                    <div class="user">
+                        <img src="images/lobby.jpg">
+                        <div class="user-info">
+                            <h4>JAY KIM</h4>
+                            <small>@jaykim</small>
+                     </div>
+                     </div>
+                    <p>The rooms were clean, very comfortable, and the staff was amazing. They went over and beyond to help make our stay enjoyable. I highly recommend this hotel for anyone visiting downtown (L)  They were extremely accommodating and allowed us to check in early at like 10am. We got to hotel super early and I didn’t wanna wait. So this was a big plus. The sevice was exceptional as well. Would definitely send a friend there.</p>
+                </div>
+                <div class="testimonial-col">
+                   <div class="user">
+                        <img src="images/lobby.jpg">
+                        <div class="user-info">
+                            <h4>JAY KIM</h4>
+                            <small>@jaykim</small>
+                            </div>
+                            </div>
+                    <p>The rooms were clean, very comfortable, and the staff was amazing. They went over and beyond to help make our stay enjoyable. I highly recommend this hotel for anyone visiting downtown (L)  They were extremely accommodating and allowed us to check in early at like 10am. We got to hotel super early and I didn’t wanna wait. So this was a big plus. The sevice was exceptional as well. Would definitely send a friend there.</p>
+                        </div>
+                <div class="testimonial-col">
+                   <div class="user">
+                        <img src="images/lobby.jpg">
+                        <div class="user-info">
+                            <h4>JAY KIM</h4>
+                            <small>@jaykim</small>
+                        </div>
+                        </div>
+                    <p>The rooms were clean, very comfortable, and the staff was amazing. They went over and beyond to help make our stay enjoyable. I highly recommend this hotel for anyone visiting downtown (L)  They were extremely accommodating and allowed us to check in early at like 10am. We got to hotel super early and I didn’t wanna wait. So this was a big plus. The sevice was exceptional as well. Would definitely send a friend there.</p>
+                </div>
+                </div>
+                </section>
+
+
+   <!--footer-->
+<section id="footer">
+    <div class="title-text">
+        <p>contact</p>
+        <h1>visit us today</h1>
+    </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <p>monday to friday -24/7</p>
+            <p>saturday and sunday- 8am to 11pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>Get In Touch</h1>
+            <p>#30 abc colony,xyz city IN</p>
+            <p>example@website.com</p>
+            <p>+001 4589034</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="service"></section>
+<script>
+  var menubtn= document.getElementById("menubtn")
+  var sideNav= document.getElementById("sideNav")
+  var menu= document.getElementById("menu")
+
+  sideNav.style.right="-250px";
+
+menubtn.onclick=function(){
+    if(sideNav.style.right=="-250px"){
+        sideNav.style.right="0";
+}
+else{
+    sideNav.style.right="-250px";
+}
+     }
+
+</script>
+
+    </body>
+</html>
+        <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+    </p>
+</body>
+</html>

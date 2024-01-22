@@ -1,0 +1,50 @@
+<?php
+   include_once '_includes/dbh.php';
+?>
+<!DOCTYPE html>
+<HTML>
+<head>
+	<title>login form</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<h2>login page</h2>
+	<br>
+	<div class="login">
+		<form id="login" method="get" action="login.php">
+			<label>
+				<b>username</b>
+			</label>
+			<input type="text" name="uname" id="uname" placeholder="username">
+		
+			<label>
+				<b>password</b>
+			</label>
+			<input type="password" name="pass" id="pass" placeholder="password">
+			<br><br>
+			<input type="button" name="log" id="log" value="login">
+			<br><br>
+			<input type="checkbox" name="check">
+			<span>Remember me</span>
+			<br><br>
+			<a href="#">forgot password?</a>
+			<br><br>
+			
+				<form id="sign up" method="get" action="sign up.php">
+					<label>
+						<b>name</b>
+					</label>
+					<input type="text" name="uname" id="uname" placeholder="name">
+					<label>
+						<b>email</b>
+					</label>
+					<input type="text" name="uname" id="uname" placeholder="email address">
+
+				</form>
+			</div>
+		
+		</form>
+	</div>
+</body>
+</HTML>
+</body>
